@@ -7,8 +7,16 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import openpyxl
 from constants.globalConstants import *
+#Instagram sayfası açılır
+#Kaydol butonuna tıklanır => Kaydol sayfasına yönlendirildi
+#Eposta  girilir
+#Ad-soyad  girilir
+#Kullanıcı adı  girilir
+#Şifre girilir 
+#Kaydol butonuna tıklanır
+#Belirtilen uyarı mesajı ekranda görüntülenir => "Üzgünüz, şifren yanlıştı. Lütfen şifreni dikkatlice kontrol et."
 
-class Test_Source:
+class Test_Register:
     def setup_method(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
